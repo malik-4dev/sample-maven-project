@@ -3,7 +3,7 @@ pipeline {
     stages {
     stage('maven install') {
       steps {
-        echo "ok"
+        sh 'mvn clean install'
 
       }
     }
